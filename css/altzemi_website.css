@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transition: 0.3s;
+    background-color: rgba(255,255,255,0);
+    height: 200px;
+}
+
+/* backgroundを透過、高さを200から100pxに変更 */
+.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-transition: all .4s ease 0s background .6s ease .2s;
+    transition: all .4s ease 0s, background .6s ease .2s;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: touch;
+    height: 100px;
+}
